@@ -12,7 +12,7 @@
 
 1. **EAS CLI'yi yükleyin:**
 ```bash
-sudo npm install -g @expo/cli eas-cli
+npm install -g @expo/cli eas-cli
 ```
 
 2. **Expo hesabınıza giriş yapın:**
