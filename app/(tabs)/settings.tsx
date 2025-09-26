@@ -209,6 +209,15 @@ export default function SettingsScreen() {
       </View>
 
       <View style={styles.appInfo}>
+        <Text style={styles.appName}>BasakPDF</Text>
+        <Text style={styles.appVersion}>Versiyon 1.0.0</Text>
+        <Text style={styles.appCopyright}>
+          © 2024 BasakPDF. Tüm hakları saklıdır.
+        </Text>
+      </View>
+    </ScrollView>
+  );
+}
 
 
 const styles = StyleSheet.create({
