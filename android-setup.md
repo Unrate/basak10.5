@@ -10,22 +10,30 @@
 
 ### Kurulum Adımları
 
-1. **EAS CLI'yi yükleyin:**
+1. **npm global dizinini yapılandırın:**
+```bash
+mkdir -p ~/.npm-global
+npm config set prefix '~/.npm-global'
+echo 'export PATH=~/.npm-global/bin:$PATH' >> ~/.bashrc
+export PATH=~/.npm-global/bin:$PATH
+```
+
+2. **EAS CLI'yi yükleyin:**
 ```bash
 npm install -g @expo/cli eas-cli
 ```
 
-2. **Expo hesabınıza giriş yapın:**
+3. **Expo hesabınıze giriş yapın:**
 ```bash
 expo login
 ```
 
-3. **Development build oluşturun:**
+4. **Development build oluşturun:**
 ```bash
 eas build --profile development --platform android
 ```
 
-4. **Yerel development build için:**
+5. **Yerel development build için:**
 ```bash
 eas build --profile development --platform android --local
 ```
